@@ -118,10 +118,10 @@
 
         <podspec>
             <config>
-                <source url="https://github.com/CocoaPods/Specs.git"/>
+                <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods >
-                <pod name="naveridlogin-sdk-ios" spec="~> 4.1.2" />
+                <pod name="naveridlogin-sdk-ios" spec="4.1.5" />
             </pods>
         </podspec>
         <header-file src="src/ios/NaverCordovaSDK.h"/>
