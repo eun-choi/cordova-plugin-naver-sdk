@@ -84,7 +84,7 @@ public class NaverCordovaSDK extends CordovaPlugin {
 
     private void unlinkApp(CallbackContext callbackContext) {
         Context context = cordova.getActivity();
-        new NidOAuthLogin().callDeleteTokenApi(cordova.getActivity(), new OAuthLoginCallback() {
+        new NidOAuthLogin().callDeleteTokenApi(new OAuthLoginCallback() {
             @Override
             public void onSuccess() {
                 callbackContext.success();
@@ -105,7 +105,7 @@ public class NaverCordovaSDK extends CordovaPlugin {
 
 
     private void refreshAccessToken(CallbackContext callbackContext) {
-        new NidOAuthLogin().callRefreshAccessTokenApi(cordova.getActivity(), new OAuthLoginCallback() {
+        new NidOAuthLogin().callRefreshAccessTokenApi(new OAuthLoginCallback() {
             @Override
             public void onSuccess() {
                 String accessToken = mOAuthLoginInstance.getAccessToken();
