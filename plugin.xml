@@ -121,7 +121,7 @@
                 <source url="https://cdn.cocoapods.org/"/>
             </config>
             <pods >
-                <pod name="naveridlogin-sdk-ios" spec="4.2.2" />
+                <pod name="naveridlogin-sdk-ios" spec="4.2.3" />
             </pods>
         </podspec>
         <header-file src="src/ios/NaverCordovaSDK.h"/>
